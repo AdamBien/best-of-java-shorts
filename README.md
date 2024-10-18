@@ -1,4 +1,4 @@
-# The Best of Java Shorts Show by [Adam Bien](http://about.adam-bien.com)
+# 🚀🎉☕️ The Best of Java Shorts Show by [Adam Bien](http://about.adam-bien.com)
 
 A selection of Java Shorts from http://youtube.com/bienadam/shorts which I sometimes present on conferences
 
