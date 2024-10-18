@@ -9,10 +9,16 @@ A selection of Java Shorts from http://youtube.com/bienadam/shorts which I somet
 [![Devoxx 2024: The Best of Java Shorts Show: 100 Snippets in 50 Minutes](https://i.ytimg.com/vi/t03DOhiTPkc/mqdefault.jpg)](https://www.youtube.com/embed/t03DOhiTPkc?rel=0)
 
 
-## How to run
+## 🛫 How to run
 
 ```shell
 git clone https://github.com/AdamBien/best-of-java-shorts
 cd best-of-java-shorts
 java S00_BoringMain.java 
 ```
+
+## FAQ
+
+Q: Why there are multiple shorts with "100"?
+
+A: Because my "Java Script" had a bug and I had no time to fix it 😀
