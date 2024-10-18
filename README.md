@@ -1,5 +1,7 @@
 # 🚀🎉☕️ The Best of Java Shorts Show by [Adam Bien](http://about.adam-bien.com)
 
+No dependencies, no builds, no compilation, no IDEs.
+
 A selection of Java Shorts from http://youtube.com/bienadam/shorts which I sometimes present on conferences
 
 ## Presented at:
