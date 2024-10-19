@@ -20,6 +20,10 @@ cd best-of-java-shorts
 java S00_BoringMain.java 
 ```
 
+## A "Short" Idea
+
+If you have an idea for a new short, or would like to improve an existing one, just open an [issue](https://github.com/AdamBien/best-of-java-shorts/issues)
+
 ## FAQ
 
 Q: Why there are multiple shorts with "100"?
