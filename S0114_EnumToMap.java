@@ -1,3 +1,4 @@
+import static java.lang.System.out;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -21,6 +22,6 @@ interface App {
     var sizesAsMap = Stream.of(Sizes.values())
     .collect(Collectors
     .toMap(Sizes::name,Sizes::size));
-    System.out.println(sizesAsMap);
+    out.println(sizesAsMap);
   }
 }

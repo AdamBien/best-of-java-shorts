@@ -1,20 +1,23 @@
 import java.util.Arrays;
 import java.util.stream.Stream;
+import static java.lang.System.out;
 
 interface App {
 
   static void numbers(int... numbers) {
-    var attempt = Stream
+    var withOf = Stream
         .of(numbers)
         .toList();
-    System.out.println(attempt);
-    var result = Arrays.stream(numbers)
-    .boxed()
-    .toList();
-    System.out.println(result);
+    out.println(withOf);
+
+    var withStream = Arrays
+        .stream(numbers)
+        .boxed()
+        .toList();
+    out.println(withStream);
   }
 
   static void main(String... args) {
-    numbers(2, 4, 42,13);
+    numbers(2, 4, 42, 13);
   }
 }

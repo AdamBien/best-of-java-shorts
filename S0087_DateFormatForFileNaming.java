@@ -1,3 +1,4 @@
+import static java.lang.System.out;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -7,7 +8,6 @@ interface App {
     var date = LocalDateTime
     .now()
     .format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
-
-    System.out.println(date);
+    out.println(date);
   }
 }

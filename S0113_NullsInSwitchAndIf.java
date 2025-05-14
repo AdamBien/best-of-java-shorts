@@ -1,3 +1,4 @@
+import static java.lang.System.out;
 import java.util.Optional;
 
 interface App {
@@ -17,7 +18,7 @@ interface App {
   }
 
   static void main(String... args) {
-    toIntSwitch(null)
-        .ifPresent(System.out::println);
+    toIntIf(null)
+        .ifPresent(out::println);
   }
 }

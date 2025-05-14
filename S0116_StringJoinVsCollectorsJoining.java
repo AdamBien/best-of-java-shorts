@@ -1,3 +1,4 @@
+import static java.lang.System.out;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -9,8 +10,8 @@ interface App {
         .stream()
         .collect(Collectors
             .joining(","));
-    System.out.println(withCollector);
+    out.println(withCollector);
     var listString = String.join(",", list);
-    System.out.println(listString);
+    out.println(listString);
   }
 }

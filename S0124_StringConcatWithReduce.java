@@ -1,5 +1,5 @@
+import static java.lang.System.out;
 import java.util.stream.Stream;
-import java.util.stream.Collectors;
 
 interface S0124_StringConcatWithReduce {
 
@@ -8,7 +8,7 @@ interface S0124_StringConcatWithReduce {
     .of("Hello","Java","Duke")
     .reduce(String::concat)
     .orElse("");
-    System.out.println(result);
+    out.println(result);
 
   }
 }

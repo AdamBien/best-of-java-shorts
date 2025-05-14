@@ -1,7 +1,7 @@
+import static java.lang.System.out;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalQueries;
 import java.time.temporal.TemporalQuery;
 
 interface App {
@@ -11,6 +11,6 @@ interface App {
     var date = LocalDate
       .of(42, Month.JANUARY, 15)
       .query(query);
-    System.out.println(date);
+    out.println(date);
   }
 }
