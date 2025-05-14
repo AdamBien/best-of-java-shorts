@@ -1,10 +1,11 @@
+import static java.lang.System.out;
 interface S0172_CharOccurences {
 
   static void main(String... args) {
     var occurences = "hello, duke"
     .chars()
-    .filter(l -> l == 'l')
+    .filter(c -> c == 'l')
     .count();
-    System.out.println(occurences);
+    out.println(occurences);
   }
 }
