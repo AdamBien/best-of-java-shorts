@@ -1,21 +1,20 @@
-import static java.lang.System.*;
+import static java.lang.IO.*;
 
-interface App {
   
   record Runtime(int age, int weight){}
   record Dev(String name,Runtime runtime){}
   
-  static void dispatch(Object instance){
-    switch(instance){
-      case Dev(var name, Runtime(var age, var weight)) -> out.println(name + age + weight);
-      case String message -> System.out.println("->" + message);
-      default -> System.out.println("unknown");
-    }
+  String dispatch(Object instance){
+    return switch(instance){
+      case Dev(var name, Runtime(var age, var weight)) -> name + age + weight;
+      case String message -> "->" + message;
+      default -> "unknown";
+    };
   }
 
-  static void main(String... args) {
-    dispatch(new Dev("duke",new Runtime(20,65)));
-    dispatch("duke");
-    
-  }
+  void main() {
+    var recOut = dispatch(new Dev("duke",new Runtime(20,65)));
+    var stringOut = dispatch("duke");
+    println(recOut);
+    println(stringOut);
 }
