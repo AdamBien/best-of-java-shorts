@@ -1,18 +1,21 @@
+import static java.lang.IO.println;
 interface App {
   
   record Dev(String name,int age){}
   
-  static void dispatch(Object instance){
-    switch(instance){
-      case Dev(var name, var age) -> System.out.println(name + age);
-      case String message -> System.out.println("->" + message);
-      default -> System.out.println("unknown");
-    }
+  static String dispatch(Object instance){
+    return switch(instance){
+      case Dev(var name, var age) -> name + age;
+      case String message -> "->" + message;
+      default -> "unknown";
+    };
   }
 
   static void main(String... args) {
-    dispatch(new Dev("duke",12));
-    dispatch("duke");
+    var recordOut = dispatch(new Dev("duke",12));
+    var stringOut = dispatch("duke");
+    println(recordOut);
+    println(stringOut);
     
   }
 }
